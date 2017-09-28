@@ -97,8 +97,6 @@ class DynamicLinks
                 'suffix' => ['option' => $suffix]
             ]);
 
-            echo $requestData;
-
             $request = $this->client->request('POST', '', [
                 'body' => $requestData
             ]);

@@ -35,7 +35,7 @@ $analyticsInfo = new AnalyticsInfo(
 );
 $socialMediaTag = new SocialMetaTag('title', 'description', 'http://yeni.co/preview-image.jpg');
 
-$link = new DynamicLink('http://yeni.co/', $androidInfo, $iosInfo, true, $analyticsInfo, $socialMediaTag);
+$link = new DynamicLink('http://yeni.co/post?id=15&ref=at#detail', $androidInfo, $iosInfo, true, $analyticsInfo, $socialMediaTag);
 $shortLink = $dynamicLink->create($link, 'SHORT');
 // ****** //
 //Create new shortlink from Long Link

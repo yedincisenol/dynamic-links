@@ -26,7 +26,7 @@ class DynamicLinksTest extends TestCase
     public function testCreateShortLinkWithDataReturnsShortLink()
     {
         //Create new short
-        $link = new yedincisenol\DynamicLinks\DynamicLink('http://yeni.co/');
+        $link = new yedincisenol\DynamicLinks\DynamicLink('http://yeni.co/portfolyo?id=15&ref=at#detail');
         $this->assertInstanceOf(ShortLink::class, $this->dynamicLink->create($link));
     }
 

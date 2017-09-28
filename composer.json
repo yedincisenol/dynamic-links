@@ -4,8 +4,18 @@
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^6.3",
-        "ext-curl": "^7.0"
+        "ext-curl": "^7.0",
+        "illuminate/support": "^5.5"
     },
+    "keywords": [
+      "firebase",
+      "laravel",
+      "dynamic-links",
+      "firebase dynamic-links",
+      "php firebase",
+      "php"
+    ],
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
