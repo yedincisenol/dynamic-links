@@ -1,17 +1,17 @@
 Create Firebase Dynamic Links from Php and Laravel
 
 * <a href="#php-install">Php Installation</a>
-* Configuration
-* Laravel Installation
-* Usage examples
+* <a href="#php-config">Configuration</a>
+* <a href="#laravel-install"> Laravel Installation</a>
+* <a href="#usage">Usage examples</a>
 
-###<a name="php-instal"></a> Php Install
+### <a name="php-instal"></a> Php Install
 
 ```php
 composer require "yedincisenol/dynamic-links"
 ```
 
-###<a name="php-config"></a> Php Config
+### <a name="php-config"></a> Php Config
 ```$xslt
 $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
     'api_key'               =>  'apiKeyFromFirebaseProject',
@@ -19,7 +19,7 @@ $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
 ]);
 ```
 
-### <a name="laravel-install"> Laravel Install
+### <a name="laravel-install"></a> Laravel Install
 
 - Add composer
 ```php
