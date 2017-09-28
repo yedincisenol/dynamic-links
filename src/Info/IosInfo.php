@@ -37,51 +37,64 @@ class IosInfo implements \JsonSerializable
     }
 
     /**
-     * @param mixed $iosAppStoreId
+     * @param $iosAppStoreId
+     * @return $this
      */
     public function setIosAppStoreId($iosAppStoreId)
     {
         $this->iosAppStoreId = $iosAppStoreId;
+
+        return $this;
     }
 
     /**
-     * @param mixed $iosBundleId
+     * @param $iosBundleId
+     * @return $this
      */
     public function setIosBundleId($iosBundleId)
     {
         $this->iosBundleId = $iosBundleId;
+        return $this;
     }
 
     /**
-     * @param mixed $iosCustomScheme
+     * @param $iosCustomScheme
+     * @return $this
      */
     public function setIosCustomScheme($iosCustomScheme)
     {
         $this->iosCustomScheme = $iosCustomScheme;
+        return $this;
     }
 
     /**
-     * @param mixed $iosFallbackLink
+     * @param $iosFallbackLink
+     * @return $this
      */
     public function setIosFallbackLink($iosFallbackLink)
     {
         $this->iosFallbackLink = $iosFallbackLink;
+        return $this;
     }
 
     /**
-     * @param mixed $iosIpadBundleId
+     * @param $iosIpadBundleId
+     * @return $this
      */
     public function setIosIpadBundleId($iosIpadBundleId)
     {
         $this->iosIpadBundleId = $iosIpadBundleId;
+        return $this;
     }
 
     /**
-     * @param mixed $iosIpadFallbackLink
+     * @param $iosIpadFallbackLink
+     * @return $this
      */
     public function setIosIpadFallbackLink($iosIpadFallbackLink)
     {
         $this->iosIpadFallbackLink = $iosIpadFallbackLink;
+        return $this;
     }
 
     /**

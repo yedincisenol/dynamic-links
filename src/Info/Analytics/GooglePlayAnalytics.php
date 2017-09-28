@@ -38,51 +38,63 @@ class GooglePlayAnalytics implements \JsonSerializable
     }
 
     /**
-     * @param mixed $gclid
+     * @param $gclid
+     * @return $this
      */
     public function setGclid($gclid)
     {
         $this->gclid = $gclid;
+        return $this;
     }
 
     /**
-     * @param mixed $utmCampaign
+     * @param $utmCampaign
+     * @return $this
      */
     public function setUtmCampaign($utmCampaign)
     {
         $this->utmCampaign = $utmCampaign;
+        return $this;
     }
 
     /**
-     * @param mixed $utmContent
+     * @param $utmContent
+     * @return $this
      */
     public function setUtmContent($utmContent)
     {
         $this->utmContent = $utmContent;
+        return $this;
     }
 
     /**
-     * @param mixed $utmMedium
+     * @param $utmMedium
+     * @return $this
      */
     public function setUtmMedium($utmMedium)
     {
         $this->utmMedium = $utmMedium;
+        return $this;
     }
 
     /**
-     * @param mixed $utmSource
+     * @param $utmSource
+     * @return $this
      */
     public function setUtmSource($utmSource)
     {
         $this->utmSource = $utmSource;
+        return $this;
     }
 
     /**
-     * @param mixed $utmTerm
+     * @param $utmTerm
+     * @return $this
      */
     public function setUtmTerm($utmTerm)
     {
         $this->utmTerm = $utmTerm;
+        return $this;
     }
 
     /**

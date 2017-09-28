@@ -33,18 +33,15 @@ composer require "yedincisenol/dynamic-links"
 'providers' => [
     yedincisenol\DynamicLinks\LaravelServiceProvider::class
 ],
-'aliases' => [
-    'DynamicLinks' => yedincisenol\DynamicLinks\Facedes\DynamicLinks::class,
-]
 ```
 
 - Publish Config file
 Publish Config for Laravel
 ```$xslt
-php artisan vendor:publish --tag=DynamicLinks
+php artisan vendor:publish --tag=dynamic-links
 ```
 
-### <a name=""></a> Usage
+### <a name="usage"></a> Usage
 ```php
 $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
     'api_key'               =>  $apiKey,
@@ -56,3 +53,9 @@ $shortLink = $dynamicLink->create($link, 'UNGUESSABLE');
 ```
 
 > Advanced usage: example.php
+
+### <a name="test"></a> Test
+Run
+```$xslt
+phpunit
+```

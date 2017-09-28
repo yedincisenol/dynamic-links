@@ -22,35 +22,43 @@ class ItunesConnectAnalytics implements \JsonSerializable
 
 
     /**
-     * @param mixed $at
+     * @param $at
+     * @return $this
      */
     public function setAt($at)
     {
         $this->at = $at;
+        return $this;
     }
 
     /**
-     * @param mixed $ct
+     * @param $ct
+     * @return $this
      */
     public function setCt($ct)
     {
         $this->ct = $ct;
+        return $this;
     }
 
     /**
-     * @param mixed $mt
+     * @param $mt
+     * @return $this
      */
     public function setMt($mt)
     {
         $this->mt = $mt;
+        return $this;
     }
 
     /**
-     * @param mixed $pt
+     * @param $pt
+     * @return $this
      */
     public function setPt($pt)
     {
         $this->pt = $pt;
+        return $this;
     }
 
     /**

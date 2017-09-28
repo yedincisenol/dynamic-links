@@ -24,27 +24,34 @@ class SocialMetaTag implements \JsonSerializable
     }
 
     /**
-     * @param mixed $socialDescription
+     * @param $socialDescription
+     * @return $this
      */
     public function setSocialDescription($socialDescription)
     {
         $this->socialDescription = $socialDescription;
+
+        return $this;
     }
 
     /**
-     * @param mixed $socialImageLink
+     * @param $socialImageLink
+     * @return $this
      */
     public function setSocialImageLink($socialImageLink)
     {
         $this->socialImageLink = $socialImageLink;
+        return $this;
     }
 
     /**
-     * @param mixed $socialTitle
+     * @param $socialTitle
+     * @return $this
      */
     public function setSocialTitle($socialTitle)
     {
         $this->socialTitle = $socialTitle;
+        return $this;
     }
 
     /**
