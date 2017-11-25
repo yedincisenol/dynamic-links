@@ -1,17 +1,23 @@
+
+[![Travis](https://img.shields.io/travis/yedincisenol/dynamic-links.svg?style=for-the-badge)]()
+[![Packagist](https://img.shields.io/packagist/dt/yedincisenol/dynamic-links.svg?style=for-the-badge)]()
+[![Packagist](https://img.shields.io/packagist/v/yedincisenol/dynamic-links.svg?style=for-the-badge)]()
+[![Packagist](https://img.shields.io/packagist/l/yedincisenol/dynamic-links.svg?style=for-the-badge)]()
+
 Create Firebase Dynamic Links from Php and Laravel
 
 * <a href="#php-install">Php Installation</a>
-* Configuration
-* Laravel Installation
-* Usage examples
+* <a href="#php-config">Configuration</a>
+* <a href="#laravel-install"> Laravel Installation</a>
+* <a href="#usage">Usage examples</a>
 
-###<a name="php-instal"></a> Php Install
+### <a name="php-instal"></a> Php Install
 
 ```php
 composer require "yedincisenol/dynamic-links"
 ```
 
-###<a name="php-config"></a> Php Config
+### <a name="php-config"></a> Php Config
 ```$xslt
 $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
     'api_key'               =>  'apiKeyFromFirebaseProject',
@@ -19,7 +25,7 @@ $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
 ]);
 ```
 
-### <a name="laravel-install"> Laravel Install
+### <a name="laravel-install"></a> Laravel Install
 
 - Add composer
 ```php
@@ -33,18 +39,15 @@ composer require "yedincisenol/dynamic-links"
 'providers' => [
     yedincisenol\DynamicLinks\LaravelServiceProvider::class
 ],
-'aliases' => [
-    'DynamicLinks' => yedincisenol\DynamicLinks\Facedes\DynamicLinks::class,
-]
 ```
 
 - Publish Config file
 Publish Config for Laravel
 ```$xslt
-php artisan vendor:publish --tag=DynamicLinks
+php artisan vendor:publish --tag=dynamic-links
 ```
 
-### <a name=""></a> Usage
+### <a name="usage"></a> Usage
 ```php
 $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
     'api_key'               =>  $apiKey,
@@ -56,3 +59,9 @@ $shortLink = $dynamicLink->create($link, 'UNGUESSABLE');
 ```
 
 > Advanced usage: example.php
+
+### <a name="test"></a> Test
+Run
+```$xslt
+phpunit
+```

@@ -44,60 +44,74 @@ class DynamicLink implements \JsonSerializable
     }
 
     /**
-     * @param AnalyticsInfo $analyticsInfo
+     * @param $analyticsInfo
+     * @return $this
      */
     public function setAnalyticsInfo($analyticsInfo)
     {
         $this->analyticsInfo = $analyticsInfo;
+
+        return $this;
     }
 
     /**
-     * @param mixed $android_info
+     * @param $android_info
+     * @return $this
      */
     public function setAndroidInfo($android_info)
     {
         $this->androidInfo = $android_info;
+        return $this;
     }
 
     /**
-     * @param mixed $dynamic_link_domain
+     * @param $dynamic_link_domain
+     * @return $this
      */
     public function setDynamicLinkDomain($dynamic_link_domain)
     {
         $this->dynamicLinkDomain = $dynamic_link_domain;
+        return $this;
     }
 
     /**
-     * @param mixed $ios_info
+     * @param $ios_info
+     * @return $this
      */
     public function setIosInfo($ios_info)
     {
         $this->iosInfo = $ios_info;
+        return $this;
     }
 
     /**
-     * @param mixed $link
+     * @param $link
+     * @return $this
      */
     public function setLink($link)
     {
         $this->link = $link;
+        return $this;
     }
 
     /**
-     * @param int $enableForcedRedirect | If set to '1', skip the app preview page when the Dynamic Link is opened, and instead redirect to the app or store. The app preview page (enabled by default) can more reliably send users to the most appropriate destination when they open Dynamic Links in apps; however, if you expect a Dynamic Link to be opened only in apps that can open Dynamic Links reliably without this page, you can disable it with this parameter. Note: the app preview page is only shown on iOS currently, but may eventually be shown on Android. This parameter will affect the behavior of the Dynamic Link on both platforms.
-
+     * @param int $enableForcedRedirect
+     * @return $this
      */
     public function setNavigationInfo($enableForcedRedirect = 0)
     {
         $this->navigationInfo['enableForcedRedirect'] = $enableForcedRedirect;
+        return $this;
     }
 
     /**
-     * @param mixed $social_meta_tag_info
+     * @param $social_meta_tag_info
+     * @return $this
      */
     public function setSocialMetaTagInfo($social_meta_tag_info)
     {
         $this->socialMetaTagInfo = $social_meta_tag_info;
+        return $this;
     }
 
     /**

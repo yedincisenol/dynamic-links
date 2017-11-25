@@ -18,19 +18,23 @@ class AnalyticsInfo implements \JsonSerializable
     }
 
     /**
-     * @param mixed $googlePlayAnalytics
+     * @param $googlePlayAnalytics
+     * @return $this
      */
     public function setGooglePlayAnalytics($googlePlayAnalytics)
     {
         $this->googlePlayAnalytics = $googlePlayAnalytics;
+        return $this;
     }
 
     /**
-     * @param mixed $itunesConnectAnalytics
+     * @param $itunesConnectAnalytics
+     * @return $this
      */
     public function setItunesConnectAnalytics($itunesConnectAnalytics)
     {
         $this->itunesConnectAnalytics = $itunesConnectAnalytics;
+        return $this;
     }
 
     /**

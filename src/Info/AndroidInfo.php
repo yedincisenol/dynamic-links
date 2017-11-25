@@ -36,35 +36,43 @@ class AndroidInfo implements \JsonSerializable
     }
 
     /**
-     * @param mixed $androidFallbackLink
+     * @param $androidFallbackLink
+     * @return $this
      */
     public function setAndroidFallbackLink($androidFallbackLink)
     {
         $this->androidFallbackLink = $androidFallbackLink;
+        return $this;
     }
 
     /**
-     * @param mixed $androidLink
+     * @param $androidLink
+     * @return $this
      */
     public function setAndroidLink($androidLink)
     {
         $this->androidLink = $androidLink;
+        return $this;
     }
 
     /**
-     * @param mixed $androidMinPackageVersionCode
+     * @param $androidMinPackageVersionCode
+     * @return $this
      */
     public function setAndroidMinPackageVersionCode($androidMinPackageVersionCode)
     {
         $this->androidMinPackageVersionCode = $androidMinPackageVersionCode;
+        return $this;
     }
 
     /**
-     * @param mixed $androidPackageName
+     * @param $androidPackageName
+     * @return $this
      */
     public function setAndroidPackageName($androidPackageName)
     {
         $this->androidPackageName = $androidPackageName;
+        return $this;
     }
 
     /**
