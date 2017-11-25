@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^6.3",
-        "ext-curl": "^7.0",
+        "ext-curl": "*",
         "illuminate/support": "^5.5"
     },
     "keywords": [
