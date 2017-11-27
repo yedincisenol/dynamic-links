@@ -2,6 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 use yedincisenol\DynamicLinks\ShortLink;
+use yedincisenol\DynamicLinks\DynamicLink;
 
 class DynamicLinksTest extends TestCase
 {
@@ -14,7 +15,7 @@ class DynamicLinksTest extends TestCase
     public function setUp()
     {
 
-        $this->dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
+        $this->dynamicLink = new DynamicLinks([
             'api_key'               =>  $this->apiKey,
             'dynamic_link_domain'   =>  $this->dynamicLinkDomain
         ]);
@@ -26,7 +27,7 @@ class DynamicLinksTest extends TestCase
     public function testCreateShortLinkWithDataReturnsShortLink()
     {
         //Create new short
-        $link = new yedincisenol\DynamicLinks\DynamicLink('http://yeni.co/portfolyo?id=15&ref=at#detail');
+        $link = new DynamicLink('http://yeni.co/portfolyo?id=15&ref=at#detail');
         $this->assertInstanceOf(ShortLink::class, $this->dynamicLink->create($link));
     }
 
