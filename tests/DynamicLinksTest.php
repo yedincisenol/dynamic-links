@@ -3,6 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use yedincisenol\DynamicLinks\ShortLink;
 use yedincisenol\DynamicLinks\DynamicLink;
+use yedincisenol\DynamicLinks\DynamicLinks;
 
 class DynamicLinksTest extends TestCase
 {
