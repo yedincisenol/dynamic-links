@@ -41,6 +41,8 @@ class LaravelServiceProvider extends ServiceProvider
         $this->app->singleton('DynamicLinks', function ($app) {
             return new DynamicLinks($app['config']['dynamic-links']);
         });
+        
+        $this->app->alias('DynamicLinks', DynamicLinks::class);
     }
 
     /**
