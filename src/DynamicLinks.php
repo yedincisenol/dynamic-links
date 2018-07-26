@@ -22,8 +22,8 @@ class DynamicLinks
      */
     public function __construct(array $config = null)
     {
-        if ($config == null) {
-            $config = require_once 'config.php';
+        if ($config == null && function_exists('config')) {
+            $config = config('dynamiclinks');
         }
 
         if ($config == null || !isset($config['api_key']) || strlen($config['api_key']) < 1) {

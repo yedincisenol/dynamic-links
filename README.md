@@ -32,7 +32,7 @@ $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
 composer require "yedincisenol/dynamic-links"
 ```
 
-- Add service provider (For Laravel 5.3)
+- Add service provider (For Laravel 5.6 before) 
 `config/app.php`
 
 ```php
