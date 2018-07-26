@@ -22,11 +22,11 @@ class LaravelServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config.php' => config_path('dynamic-links.php'),
-        ], "dynamic-links");
+            __DIR__ . '/config.php' => config_path('dynamiclinks.php'),
+        ], "dynamiclinks");
 
         $this->mergeConfigFrom(
-            __DIR__ . '/config.php', 'dynamic-links'
+            __DIR__ . '/config.php', 'dynamiclinks'
         );
 
     }
@@ -39,7 +39,7 @@ class LaravelServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('DynamicLinks', function ($app) {
-            return new DynamicLinks($app['config']['dynamic-links']);
+            return new DynamicLinks($app['config']['dynamiclinks']);
         });
         
         $this->app->alias('DynamicLinks', DynamicLinks::class);

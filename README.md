@@ -32,13 +32,26 @@ $dynamicLink = new yedincisenol\DynamicLinks\DynamicLinks([
 composer require "yedincisenol/dynamic-links"
 ```
 
-- Add service provider
+- Add service provider (For Laravel 5.3)
 `config/app.php`
 
 ```php
 'providers' => [
     yedincisenol\DynamicLinks\LaravelServiceProvider::class
 ],
+```
+
+- Fill Environments
+> copy theese parameters to your project .env and fill
+```
+FIREBASE_API_KEY=
+FIREBASE_DYNAMIC_LINKS_DOMAIN=
+```
+
+- Laravel Usage
+```
+$link = new yedincisenol\DynamicLinks\DynamicLink('http://yeni.co/');
+$shortLink = $dynamicLink->create($link, 'UNGUESSABLE');
 ```
 
 - Publish Config file
