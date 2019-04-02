@@ -1,5 +1,5 @@
 {
-    "name": "yedincisenol/dynamic-links",
+    "name": "marcoandreac/dynamic-links",
     "description": "Firebase Dynamic Links for Php and Laravel",
     "type": "library",
     "require": {
@@ -15,7 +15,7 @@
       "php firebase",
       "php"
     ],
-    "version": "1.2.4",
+    "version": "1.2.5",
     "license": "MIT",
     "authors": [
         {
