@@ -6,6 +6,8 @@ class DynamicLink implements \JsonSerializable
 {
     private $dynamicLinkDomain = null;
 
+    private $domainUriPrefix = null;
+
     private $link;
 
     private $androidInfo  = null;
@@ -61,6 +63,12 @@ class DynamicLink implements \JsonSerializable
     public function setAndroidInfo($android_info)
     {
         $this->androidInfo = $android_info;
+        return $this;
+    }
+
+    public function setDomainUriPrefix($domain_uri_prefix)
+    {
+        $this->domainUriPrefix = $domain_uri_prefix;
         return $this;
     }
 

@@ -89,6 +89,7 @@ class DynamicLinks
         }
 
         $dynamicLink->setDynamicLinkDomain($dynamicLinkDomain);
+        $dynamicLink->setDomainUriPrefix($dynamicLinkDomain);
 
         try
         {
