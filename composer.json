@@ -1,5 +1,5 @@
 {
-    "name": "yedincisenol/dynamic-links",
+    "name": "zanevskyas/dynamic-links",
     "description": "Firebase Dynamic Links for Php and Laravel",
     "type": "library",
     "require": {
@@ -21,6 +21,10 @@
         {
             "name": "Ibrahim S. Orencik",
             "email": "o@yedincisenol.com"
+        },
+        {
+            "name": "Andrey Zanevskiy",
+            "email": "zanevsky.as@gmail.com"
         }
     ],
     "autoload": {
