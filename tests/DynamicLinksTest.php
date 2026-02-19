@@ -13,9 +13,8 @@ class DynamicLinksTest extends TestCase
     private $longLink           = 'https://rcw3r.app.goo.gl/?link=https://example.com/&apn=com.example.android&ibi=com.example.ios';
     private $dynamicLink        =  null;
 
-    public function setUp()
+    public function setUp(): void
     {
-
         $this->dynamicLink = new DynamicLinks([
             'api_key'               =>  $this->apiKey,
             'dynamic_link_domain'   =>  $this->dynamicLinkDomain
